@@ -24,8 +24,8 @@ order: 1997
 cycles: false
 bibtex_author: Lopez-lopera, Andr\'es and John, ST and Durrande, Nicolas
 author:
-- given: Andrés
-  family: Lopez-lopera
+- given: Andrés F.
+  family: Lopez-Lopera
 - given: ST
   family: John
 - given: Nicolas
