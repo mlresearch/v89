@@ -22,9 +22,9 @@ lastpage: 2006
 page: 1997-2006
 order: 1997
 cycles: false
-bibtex_author: Lopez-lopera, Andr\'es and John, ST and Durrande, Nicolas
+bibtex_author: Lopez-lopera, Andr\'es F and John, ST and Durrande, Nicolas
 author:
-- given: Andrés
+- given: Andrés F
   family: Lopez-lopera
 - given: ST
   family: John

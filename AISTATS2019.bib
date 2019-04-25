@@ -86,7 +86,7 @@
 
 @InProceedings{zhang19a,
   title		= {Scalable Thompson Sampling via Optimal Transport},
-  author	= {Zhang, Ruiyi and Wen, Zheng and Chen, Changyou and FANG, CHEN and Yu, Tong and Carin, Lawrence},
+  author	= {Zhang, Ruiyi and Wen, Zheng and Chen, Changyou and Fang, Chen and Yu, Tong and Carin, Lawrence},
   pages		= {87-96},
   abstract	= {Thompson sampling (TS) is a class of algorithms for sequential decision-making, which requires maintaining a posterior distribution over a reward model. However, calculating exact posterior distributions is intractable for all but the simplest models. Consequently, how to computationally-efficiently approximate a posterior distribution is a crucial problem for scalable TS with complex models, such as neural networks. In this paper, we use distribution optimization techniques to approximate the posterior distribution, solved via Wasserstein gradient flows. Based on the framework, a principled particle-optimization algorithm is developed for TS to approximate the posterior efficiently. Our approach is scalable and does not make explicit distribution assumptions on posterior approximations.  Extensive experiments on both synthetic data and large-scale real data demonstrate the superior performance of the proposed methods.} 
 }
@@ -134,7 +134,7 @@
 
 @InProceedings{zhou19b,
   title		= {LF-PPL: A Low-Level First Order Probabilistic Programming Language for Non-Differentiable Models},
-  author	= {Zhou, Yuan and Gram-Hansen, Bradley and Kohn, Tobias and Rainforth, Tom and Yang, Hongseok and Wood, Frank},
+  author	= {Zhou, Yuan and Gram-Hansen, Bradley J and Kohn, Tobias and Rainforth, Tom and Yang, Hongseok and Wood, Frank},
   pages		= {148-157},
   abstract	= {We develop a new Low-level, First-order Probabilistic Programming Language~(LF-PPL) suited for models containing a mix of continuous, discrete, and/or piecewise-continuous variables. The key success of this language and its compilation scheme is in its ability to automatically distinguish parameters the density function is discontinuous with respect to, while further providing runtime checks for boundary crossings. This enables the introduction of new inference engines that are able to exploit gradient information, while remaining efficient for models which are not everywhere differentiable. We demonstrate this ability by incorporating a discontinuous Hamiltonian Monte Carlo (DHMC) inference engine that is able to deliver automated and efficient inference for non-differentiable models. Our system is backed up by a mathematical formalism that ensures that any model expressed in this language has a density with measure zero discontinuities to maintain the validity of the inference engine.} 
 }
@@ -390,7 +390,7 @@
 
 @InProceedings{pandit19a,
   title		= {Sparse Multivariate  Bernoulli Processes in High Dimensions},
-  author	= {Pandit, Parthe and Sahraee-Ardakan, Mojtaba and Amini, Arash and Rangan, Sundeep and Fletcher, Alyson},
+  author	= {Pandit, Parthe and Sahraee-Ardakan, Mojtaba and Amini, Arash and Rangan, Sundeep and Fletcher, Alyson K},
   pages		= {457-466},
   abstract	= {We consider the problem of estimating the parameters of a multivariate Bernoulli process with auto-regressive feedback in the high-dimensional setting where the number of samples available is much less than the number of parameters. This problem arises in learning interconnections of networks of dynamical systems with spiking or binary valued data.  We also allow the process to depend on its past up to a lag p, for a general $p \geq 1$, allowing for more realistic modeling in many applications. We propose and analyze an $\ell_1$-regularized maximum likelihood (ML) estimator under the assumption that the parameter tensor is approximately sparse. Rigorous analysis of such estimators is made challenging by the dependent and non-Gaussian nature of the process as well as the presence of the nonlinearities and multi-level feedback. We derive precise upper bounds on the mean-squared estimation error in terms of the number of samples, dimensions of the process, the lag $p$ and other key statistical properties of the model. The ideas presented can be used in the rigorous high-dimensional analysis of regularized $M$-estimators for other sparse nonlinear and non-Gaussian processes with long-range dependence.} 
 }
@@ -446,7 +446,7 @@
 
 @InProceedings{johansson19a,
   title		= {Support and Invertibility in Domain-Invariant Representations},
-  author	= {Johansson, Fredrik and Sontag, David and Ranganath, Rajesh},
+  author	= {Johansson, Fredrik D and Sontag, David and Ranganath, Rajesh},
   pages		= {527-536},
   abstract	= {Learning domain-invariant representations has become a popular approach to unsupervised domain adaptation and is often justified by invoking a particular suite of theoretical results. We argue that there are two significant flaws in such arguments. First, the results in question hold only for a fixed representation and do not account for information lost in non-invertible transformations. Second, domain invariance is often a far too strict requirement and does not always lead to consistent estimation, even under strong and favorable assumptions. In this work, we give generalization bounds for unsupervised domain adaptation that hold for any representation function by acknowledging the cost of non-invertibility. In addition, we show that penalizing distance between densities is often wasteful and propose a bound based on measuring the extent to which the support of the source domain covers the target domain. We perform experiments on well-known benchmarks that illustrate the short-comings of current standard practice.} 
 }
@@ -470,7 +470,7 @@
 
 @InProceedings{li19a,
   title		= {On Connecting Stochastic Gradient MCMC and Differential Privacy},
-  author	= {Li, Bai and Chen, Changyou and Liu, Hao and Duke, Lawrence Carin},
+  author	= {Li, Bai and Chen, Changyou and Liu, Hao and Carin, Lawrence},
   pages		= {557-566},
   abstract	= {Concerns related to data security and confidentiality have been raised when applying machine learning to real-world applications. Differential privacy provides a principled and rigorous privacy guarantee for machine learning models. While it is common to inject noise to design a model satisfying a required differential-privacy property, it is generally hard to balance the trade-off between privacy and utility. We show that stochastic gradient Markov chain Monte Carlo (SG-MCMC) -- a class of scalable Bayesian posterior sampling algorithms -- satisfies strong differential privacy, when carefully chosen stepsizes are employed. We develop theory on the performance of the proposed differentially-private SG-MCMC method. We conduct experiments to support our analysis, and show that a standard SG-MCMC sampler with minor modification can reach state-of-the-art performance in terms of both privacy and utility on Bayesian learning.} 
 }
@@ -534,7 +534,7 @@
 
 @InProceedings{roberts19a,
   title		= {Reversible Jump Probabilistic Programming},
-  author	= {Roberts, David and Gallagher, Marcus and Taimre, Thomas},
+  author	= {Roberts, David A and Gallagher, Marcus and Taimre, Thomas},
   pages		= {634-643},
   abstract	= {In this paper we present a method for automatically deriving a Reversible Jump Markov chain Monte Carlo sampler from probabilistic programs that specify the target and proposal distributions. The main challenge in automatically deriving such an inference procedure, in comparison to deriving a generic Metropolis-Hastings sampler, is in calculating the Jacobian adjustment to the proposal acceptance ratio. To achieve this, our approach relies on the interaction of several different components, including automatic differentiation, transformation inversion, and optimised code generation. We also present Stochaskell, a new probabilistic programming language embedded in Haskell, which provides an implementation of our method.} 
 }
@@ -590,7 +590,7 @@
 
 @InProceedings{holland19a,
   title		= {Robust descent using smoothed multiplicative noise},
-  author	= {Holland, Matthew},
+  author	= {Holland, Matthew J},
   pages		= {703-711},
   abstract	= {In this work, we propose a novel robust gradient descent procedure which makes use of a smoothed multiplicative noise applied directly to observations before constructing a sum of soft-truncated gradient coordinates. We show that the procedure has competitive theoretical guarantees, with the major advantage of a simple implementation that does not require an iterative sub-routine for robustification. Empirical tests reinforce the theory, showing more efficient generalization over a much wider class of data distributions.} 
 }
@@ -598,7 +598,7 @@
 
 @InProceedings{holland19b,
   title		= {Classification using margin pursuit},
-  author	= {Holland, Matthew},
+  author	= {Holland, Matthew J},
   pages		= {712-720},
   abstract	= {In this work, we study a new approach to optimizing the margin distribution realized by binary classifiers, in which the learner searches the hypothesis space in such a way that a pre-set margin level ends up being a distribution-robust estimator of the margin location. This procedure is easily implemented using gradient descent, and admits finite-sample bounds on the excess risk under unbounded inputs, yielding competitive rates under mild assumptions. Empirical tests on real-world benchmark data reinforce the basic principles highlighted by the theory.} 
 }
@@ -670,7 +670,7 @@
 
 @InProceedings{huggins19a,
   title		= {Scalable Gaussian Process Inference with Finite-data Mean and Variance Guarantees},
-  author	= {Huggins, Jonathan and Campbell, Trevor and Kasprzak, Mikolaj and Broderick, Tamara},
+  author	= {Huggins, Jonathan H and Campbell, Trevor and Kasprzak, Mikolaj and Broderick, Tamara},
   pages		= {796-805},
   abstract	= {Gaussian processes (GPs) offer a flexible class of priors for nonparametric Bayesian regression, but popular GP posterior inference methods are typically prohibitively slow or lack desirable finite-data guarantees on quality. We develop a scalable approach to approximate GP regression, with finite-data guarantees on the accuracy of our pointwise posterior mean and variance estimates. Our main contribution is a novel objective for approximate inference in the nonparametric setting: the preconditioned Fisher (pF) divergence. We show that unlike the Kullback--Leibler divergence (used in variational inference), the pF divergence bounds bounds the 2-Wasserstein distance, which in turn provides tight bounds on the pointwise error of mean and variance estimates. We demonstrate that, for sparse GP likelihood approximations, we can minimize the pF divergence bounds efficiently. Our experiments show that optimizing the pF divergence bounds has the same computational requirements as variational sparse GPs while providing comparable empirical performance---in addition to our novel finite-data quality guarantees.} 
 }
@@ -798,7 +798,7 @@
 
 @InProceedings{katariya19a,
   title		= {Conservative Exploration using Interleaving},
-  author	= {Katariya, Sumeet and Kveton, Branislav and Wen, Zheng and Potluru, Vamsi},
+  author	= {Katariya, Sumeet and Kveton, Branislav and Wen, Zheng and Potluru, Vamsi K},
   pages		= {954-963},
   abstract	= {In many practical problems, a learning agent may want to learn the best action in hindsight without ever taking a bad action, which is much worse than a default production action. In general, this is impossible because the agent has to explore unknown actions, some of which can be bad, to learn better actions. However, when the actions are structured, this is possible if the unknown action can be evaluated by interleaving it with the default action. We formalize this concept as learning in stochastic combinatorial semi-bandits with exchangeable actions. We design efficient learning algorithms for this problem, bound their n-step regret, and evaluate them on both synthetic and real-world problems. Our real-world experiments show that our algorithms can learn to recommend K most attractive movies without ever making disastrous recommendations, both overall and subject to a diversity constraint.} 
 }
@@ -846,7 +846,7 @@
 
 @InProceedings{chen19b,
   title		= {$\beta^3$-IRT: A New Item Response Model and its Applications},
-  author	= {Chen, Yu and Filho, Telmo Silva and Prudencio, Ricardo and Diethe, Tom and Flach, Peter},
+  author	= {Chen, Yu and Filho, Telmo Silva and Prudencio, Ricardo B and Diethe, Tom and Flach, Peter},
   pages		= {1013-1021},
   abstract	= {Item Response Theory (IRT) aims to assess latent abilities of respondents based on the correctness of their answers in aptitude test items with different difficulty levels.  In this paper, we propose the $\beta^3$-IRT model, which models continuous responses and can generate a much enriched family of Item Characteristic Curves. In experiments we applied the proposed model to data from an online exam platform, and show our model outperforms a more standard 2PL-ND model on all datasets. Furthermore, we show how to apply  $\beta^3$-IRT to assess the ability of machine learning classifiers.This novel application results in a new metric for evaluating the quality of the classifier's probability estimates, based on the inferred difficulty and discrimination of data instances.} 
 }
@@ -870,7 +870,7 @@
 
 @InProceedings{hainline19a,
   title		= {Conditional Sparse $L_p$-norm Regression With Optimal Probability},
-  author	= {Hainline, John and Juba, Brendan and Le, Hai and Woodruff, David},
+  author	= {Hainline, John and Juba, Brendan and Le, Hai S and Woodruff, David},
   pages		= {1042-1050},
   abstract	= {We consider the following conditional linear regression problem: the task is to identify both (i) a $k$-DNF condition $c$ and (ii) a linear rule $f$ such that the probability of $c$ is (approximately) at least some given bound $\mu$, and minimizing the $l_p$ loss of $f$ at predicting the target $z$ in the distribution conditioned on $c$. Thus, the task is to identify a portion of the distribution on which a linear rule can provide a good fit. Algorithms for this task are useful in cases where portions of the distribution are not modeled well by simple, learnable rules, but on other portions such rules perform well. The prior state-of-the-art for such algorithms could only guarantee finding a condition of probability $O(\mu/n^k )$ when a condition of probability $\mu$ exists, and achieved a $O(n^k)$-approximation to the target loss. Here, we give efficient algorithms for solving this task with a condition $c$ that nearly matches the probability of the ideal condition, while also improving the approximation to the target loss to a $O ~(n^{k/2})$ factor. We also give an algorithm for finding a k-DNF reference class for prediction at a given query point, that obtains a sparse regression fit that has loss within $O(n^k)$ of optimal among all sparse regression parameters and sufficiently large $k$-DNF reference classes containing the query point.} 
 }
@@ -1110,7 +1110,7 @@
 
 @InProceedings{czarnecki19a,
   title		= {Distilling Policy Distillation},
-  author	= {Czarnecki, Wojciech and Pascanu, Razvan and Osindero, Simon and Jayakumar, Siddhant and Swirszcz, Grzegorz and Jaderberg, Max},
+  author	= {Czarnecki, Wojciech M and Pascanu, Razvan and Osindero, Simon and Jayakumar, Siddhant and Swirszcz, Grzegorz and Jaderberg, Max},
   pages		= {1331-1340},
   abstract	= {The transfer of knowledge from one policy to another is an important tool in Deep Reinforcement Learning. This process, referred to as distillation, has been used to great success, for example, by enhancing the optimisation of agents, leading to stronger performance faster, on harder domains. Despite the widespread use and conceptual simplicity of distillation, many different formulations are used in practice, and the subtle variations between them can often drastically change the performance and the resulting objective that is being optimised. In this work, we rigorously explore the entire landscape of policy distillation, comparing the motivations and strengths of each variant through theoretical and empirical analysis. Our results point to three distillation techniques, that are preferred depending on specifics of the task. Specifically a newly proposed expected entropy regularised distillation allows for quicker learning in a wide range of situations, while still guaranteeing convergence.} 
 }
@@ -1294,7 +1294,7 @@
 
 @InProceedings{tran19a,
   title		= {Calibrating Deep Convolutional Gaussian Processes},
-  author	= {Tran, Gia-Lac and Bonilla, Edwin and Cunningham, John and Michiardi, Pietro and Filippone, Maurizio},
+  author	= {Tran, Gia-Lac and Bonilla, Edwin V and Cunningham, John and Michiardi, Pietro and Filippone, Maurizio},
   pages		= {1554-1563},
   abstract	= {The wide adoption of Convolutional Neural Networks CNNs in applications where decision-making under uncertainty is fundamental, has brought a great deal of attention to the ability of these models to accurately quantify the uncertainty in their predictions. Previous work on combining CNNs with Gaussian processes GPs has been developed under the assumption that the predictive probabilities of these models are well-calibrated. In this paper we show that, in fact, current combinations of CNNs and GPs are miscalibrated.  We proposes a novel combination that considerably outperforms previous approaches on this aspect, while achieving state-of-the-art performance on image classification tasks.} 
 }
@@ -1622,7 +1622,7 @@
 
 @InProceedings{gao19b,
   title		= {Learning One-hidden-layer Neural Networks under General Input Distributions},
-  author	= {Gao, Weihao and Makkuva, Ashok and Oh, Sewoong and Viswanath, Pramod},
+  author	= {Gao, Weihao and Makkuva, Ashok V and Oh, Sewoong and Viswanath, Pramod},
   pages		= {1950-1959},
   abstract	= {Significant advances have been made recently on training neural networks, where the main challenge is in solving an optimization problem with abundant critical points. However, existing approaches to address this issue crucially rely on a restrictive assumption: the training data is drawn from a Gaussian distribution. In this paper, we provide a novel unified framework to design loss functions with desirable landscape properties for a wide range of general  input distributions. On these loss functions, remarkably, stochastic gradient descent theoretically recovers the true parameters with \emph{global} initializations and empirically outperforms the existing approaches. Our loss function design bridges the notion of score functions with the topic of neural network optimization. Central to our approach is the task of estimating the score function from samples, which is of basic and independent interest to theoretical statistics. Traditional estimation methods (example: kernel based) fail right at the outset; we bring statistical methods of local likelihood to design a novel estimator of  score functions, that provably adapts to the local geometry of the unknown  density.} 
 }
@@ -1638,7 +1638,7 @@
 
 @InProceedings{alvarez19a,
   title		= {Non-linear process convolutions for multi-output Gaussian processes},
-  author	= {Alvarez, Mauricio and Ward, Wil and Guarnizo, Cristian},
+  author	= {Alvarez, Mauricio A and Ward, Wil and Guarnizo, Cristian},
   pages		= {1969-1977},
   abstract	= {The paper introduces a non-linear version of the process convolution formalism for building covariance functions for multi-output Gaussian processes. The non-linearity is introduced via Volterra series, one series per each output. We provide closed-form expressions for the mean function and the covariance function of the approximated Gaussian process at the output of the Volterra series. The mean function and covariance function for the joint Gaussian process are derived using formulae for the product moments of Gaussian variables. We compare the performance of the non-linear model against the classical process convolution approach in one synthetic dataset and two real datasets.} 
 }
@@ -1662,7 +1662,7 @@
 
 @InProceedings{lopez-lopera19a,
   title		= {Gaussian Process Modulated Cox Processes under Linear Inequality Constraints},
-  author	= {Lopez-lopera, Andr\'es and John, ST and Durrande, Nicolas},
+  author	= {Lopez-lopera, Andr\'es F and John, ST and Durrande, Nicolas},
   pages		= {1997-2006},
   abstract	= {Gaussian process (GP) modulated Cox processes are widely used to model point patterns. Existing approaches require a mapping (link function) between the unconstrained GP and the positive intensity function. This commonly yields solutions that do not have a closed form or that are restricted to specific covariance functions. We introduce a novel finite approximation of GP-modulated Cox processes where positiveness conditions can be imposed directly on the GP, with no restrictions on the covariance function. Our approach can also ensure other types of inequality constraints (e.g. monotonicity, convexity), resulting in more versatile models that can be used for other classes of point processes (e.g. renewal processes). We demonstrate on both synthetic and real-world data that our framework accurately infers the intensity functions. Where monotonicity is a feature of the process, our ability to include this in the inference improves results.} 
 }
@@ -2278,7 +2278,7 @@
 
 @InProceedings{chai19a,
   title		= {Improving Quadrature for Constrained Integrands},
-  author	= {Chai, Henry and Garnett, Roman},
+  author	= {Chai, Henry R and Garnett, Roman},
   pages		= {2751-2759},
   abstract	= {We present an improved Bayesian framework for performing inference of affine transformations of constrained functions. We focus on quadrature with nonnegative functions, a common task in Bayesian inference.  We consider constraints on the range of the function of interest, such as nonnegativity or boundedness. Although our framework is general, we derive explicit approximation schemes for these constraints, and argue for the use of a log transformation for functions with high dynamic range such as likelihood surfaces. We propose a novel method for optimizing hyperparameters in this framework: we optimize the marginal likelihood in the original space, as opposed to in the transformed space. The result is a model that better explains the actual data. Experiments on synthetic and real-world data demonstrate our framework achieves superior estimates using less wall-clock time than existing Bayesian quadrature procedures.} 
 }
@@ -2670,7 +2670,7 @@
 
 @InProceedings{dai19b,
   title		= {Database Alignment with Gaussian Features},
-  author	= {Dai, Osman and Cullina, Daniel and Kiyavash, Negar},
+  author	= {Dai, Osman E and Cullina, Daniel and Kiyavash, Negar},
   pages		= {3225-3233},
   abstract	= {We consider the problem of aligning a pair of databases with jointly Gaussian features. We consider two algorithms, complete database alignment via MAP estimation among all possible database alignments, and partial alignment via a thresholding approach of log likelihood ratios. We derive conditions on mutual information between feature pairs, identifying the regimes where the algorithms are guaranteed to perform reliably and those where they cannot be expected to succeed.} 
 }
@@ -2686,7 +2686,7 @@
 
 @InProceedings{falorsi19a,
   title		= {Reparameterizing Distributions on Lie Groups},
-  author	= {Falorsi, Luca and Haan, Pim de and Davidson, Tim and Forr\'{e}, Patrick},
+  author	= {Falorsi, Luca and Haan, Pim de and Davidson, Tim R and Forr\'{e}, Patrick},
   pages		= {3244-3253},
   abstract	= {Reparameterizable densities are an important way to learn probability distributions in a deep learning setting. For many distributions it is possible to create low-variance gradient estimators by utilizing a `reparameterization trick'. Due to the absence of a general reparameterization trick, much research has recently been devoted to extend the number of reparameterizable distributional families. Unfortunately, this research has primarily focused on distributions defined in Euclidean space, ruling out the usage of one of the most influential class of spaces with non-trivial topologies: Lie groups. In this work we define a general framework to create reparameterizable densities on arbitrary Lie groups, and provide a detailed practitioners guide to further the ease of usage. We demonstrate how to create complex and multimodal distributions on the well known oriented group of 3D rotations, SO{3}, using normalizing flows. Our experiments on applying such distributions in a Bayesian setting for pose estimation on objects with discrete and continuous symmetries, showcase their necessity in achieving realistic uncertainty estimates.} 
 }
@@ -2726,7 +2726,7 @@
 
 @InProceedings{vikram19a,
   title		= {The LORACs Prior for VAEs: Letting the Trees Speak for the Data},
-  author	= {Vikram, Sharad and Hoffman, Matthew and Johnson, Matthew},
+  author	= {Vikram, Sharad and Hoffman, Matthew D and Johnson, Matthew J},
   pages		= {3292-3301},
   abstract	= {In variational autoencoders, the prior on the latent codes $z$ is often treated as an afterthought, but the prior shapes the kind of latent representation that the model learns. If the goal is to learn a representation that is interpretable and useful, then the prior should reflect the ways in which the high-level factors that describe the data vary. The ``default'' prior is a standard normal, but if the natural factors of variation in the dataset exhibit discrete structure or are not independent, then the isotropic-normal prior will actually encourage learning representations that \emph{mask} this structure. To alleviate this problem, we propose using a flexible Bayesian nonparametric hierarchical clustering prior based on the time-marginalized coalescent (TMC). To scale learning to large datasets, we develop a new inducing-point approximation and inference algorithm. We then apply the method without supervision to several datasets and examine the interpretability and practical performance of the inferred hierarchies and learned latent space.} 
 }
@@ -2822,7 +2822,7 @@
 
 @InProceedings{yang19c,
   title		= {Batched Stochastic Bayesian Optimization via Combinatorial Constraints Design},
-  author	= {Yang, Kevin and Chen, Yuxin and Lee, Alycia and Yue, Yisong},
+  author	= {Yang, Kevin K and Chen, Yuxin and Lee, Alycia and Yue, Yisong},
   pages		= {3410-3419},
   abstract	= {In many high-throughput experimental design settings, such as those common in biochemical engineering, batched queries are often more cost effective than one-by-one sequential queries. Furthermore, it is often not possible to directly choose items to query. Instead, the experimenter specifies a set of constraints that generates a library of possible items, which are then selected stochastically. Motivated by these considerations, we investigate \emph{Batched Stochastic Bayesian Optimization} (BSBO), a novel Bayesian optimization scheme for choosing the constraints in order to guide exploration towards items with greater utility. We focus on \emph{site-saturation mutagenesis}, a prototypical setting of BSBO in biochemical engineering, and propose a natural objective function for this problem. Importantly, we show that our objective function can be efficiently decomposed as a difference of submodular functions (DS), which allows us to employ DS optimization tools to greedily identify sets of constraints that increase the likelihood of finding items with high utility. Our experimental results show that our algorithm outperforms common heuristics on both synthetic and two real protein datasets.} 
 }
