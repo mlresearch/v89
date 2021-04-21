@@ -29,7 +29,7 @@ author:
 date: 2019-04-11
 address: 
 publisher: PMLR
-container-title: Proceedings of Machine Learning Research
+container-title: Proceedings of the Twenty-Second International Conference on Artificial Intelligence and Statistics
 volume: '89'
 genre: inproceedings
 issued:
